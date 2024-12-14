@@ -1,7 +1,7 @@
 # Cuman-Bisa-File-Scanner
 Aplikasi ini dibuat untuk mempermudah pengguna memindai file menggunakan layanan VirusTotal API secara interaktif melalui antarmuka grafis yang ramah pengguna. 
 
-Fitur Utama:
+## Fitur Utama:
 
 Pemindaian File dengan VirusTotal API:
 
@@ -46,4 +46,5 @@ Aplikasi menghitung hash file (SHA-256) dan memeriksa hasil analisis di VirusTot
 Jika file belum pernah dianalisis, file akan diunggah untuk diproses.
 Hasil analisis ditampilkan dalam bentuk tabel (hasil antivirus) dan grafik lingkaran (community score).
 
-![image](https://github.com/user-attachments/assets/fe2d0b0d-a244-4913-915b-7b4303d7054e)
+![image](https://github.com/user-attachments/assets/ec5fedc6-db47-4f13-8956-cc5b4490b3b2)
+
