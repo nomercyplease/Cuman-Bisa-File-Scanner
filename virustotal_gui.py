@@ -117,7 +117,7 @@ def update_chart(data, frame):
         stats.get("timeout", 0),
         stats.get("failure", 0)
     ]
-    colors = cm.tab20c.colors[:len(labels)]  # Pilih warna yang lebih menarik dari colormap
+    colors = ['#dc143c', '#ffc107', '#28a745', '#6c757d', '#17a2b8']  # Warna kustom # Pilih warna yang lebih menarik dari colormap
 
     # Filter hanya data yang memiliki nilai > 0
     filtered_labels, filtered_sizes, filtered_colors = zip(
@@ -161,14 +161,21 @@ def update_results(data, frame):
     canvas.create_window((0, 0), window=scrollable_frame, anchor="nw")
     canvas.configure(yscrollcommand=scrollbar.set)
 
-    tk.Label(scrollable_frame, text="Security Vendor Analysis", font=("Arial", 12, "bold")).pack(anchor="w")
+    tk.Label(scrollable_frame, text="Security Vendor Analysis", font=("Arial", 12, "bold")).pack(anchor="center")
     table_frame = tk.Frame(scrollable_frame)
     table_frame.pack(fill="both", expand=True)
 
+    # Menambahkan Treeview
     table = ttk.Treeview(table_frame, columns=("Vendor", "Result"), show="headings")
     table.heading("Vendor", text="Vendor")
     table.heading("Result", text="Result")
+
+    # Atur ukuran kolom (lebar)
+    table.column("Vendor", anchor="w", stretch=True, width=500)  # Lebar kolom Vendor
+    table.column("Result", anchor="center", stretch=True, width=450)  # Lebar kolom Result
+
     table.pack(fill="both", expand=True)
+    
 
     for vendor, analysis in data["results"].items():
         result_text = analysis['result'] if analysis['result'] else "Undetected"
@@ -182,6 +189,7 @@ def update_results(data, frame):
 
     canvas.pack(side="left", fill="both", expand=True)
     scrollbar.pack(side="right", fill="y")
+
 
 def start_scan(file_path, table, chart_frame, result_frame, status_label):
     def _scan():
