@@ -1,5 +1,7 @@
 # Cuman-Bisa-File-Scanner
-Aplikasi ini dibuat untuk mempermudah pengguna memindai file menggunakan layanan VirusTotal API secara interaktif melalui antarmuka grafis yang ramah pengguna. 
+Aplikasi ini dibuat untuk mempermudah pengguna memindai file menggunakan layanan VirusTotal API secara interaktif melalui antarmuka grafis yang ramah pengguna.  
+
+A command-line utility to scan files through the VirusTotal API v3
 
 ## Fitur Utama:
 
