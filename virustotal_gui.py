@@ -12,7 +12,7 @@ from matplotlib import cm  # Import colormap untuk warna menarik
 try:
     from key import API_KEY
 except ImportError:
-    API_KEY = "2e291fdc15f0c55c450f9b6d690ea1b68ccdfbf14efa9df3246cc6ab1c599e5e"
+    API_KEY = "ENTER YOU API KEY VIRUSTOTAL"
 
 HEADERS = {"x-apikey": API_KEY}
 
