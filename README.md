@@ -48,3 +48,10 @@ Hasil analisis ditampilkan dalam bentuk tabel (hasil antivirus) dan grafik lingk
 
 ![image](https://github.com/user-attachments/assets/ec5fedc6-db47-4f13-8956-cc5b4490b3b2)
 
+#Input API KEY
+
+MASUKKAN API KEY VIRUSTOTAL DI LINE 15 FILE CODINGAN virustotal_gui.py
+
+![image](https://github.com/user-attachments/assets/a81ddb22-990d-4a9b-80f7-526684a47554)
+
+
